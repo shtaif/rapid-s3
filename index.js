@@ -79,7 +79,9 @@ const
 							await next();
 						}
 						catch (err) {
-							console.log(err);
+							if (config.logApiErrors) {
+								console.log(err);
+							}
 							ctx.body = {
 								success: false,
 								error: null

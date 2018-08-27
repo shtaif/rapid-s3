@@ -10,7 +10,6 @@ ___
 - Multer for upload handling (wraps Busboy as the multipart request parser).
 
 
-
 ### Installation
 Clone repository:
 ```bash
@@ -27,6 +26,8 @@ Rapid-S3 is configured based on the following environment variables:
 - `RS3_TLS_CERT_PATH` - path for a TLS cert file - **required**
 - `RS3_PORT` - port to listen on - **optional, defaults to `4443`**
 - `RS3_STORAGE_DIR` - path to store the uploaded files in - **optional, defaults to `./storage` (directory is automatically created if not exists)**
+- `RS3_LOG_API_ERRORS` - true/false, whether to log to console API errors and their stacktraces - **optional, defaults to false**
+RS3_STORAGE_DIR
 
 To do this easily, the project supports a `.env` file being at the projects' root.
 Example of a minimal `.env`  file:
@@ -47,4 +48,4 @@ If running on `localhost` with default port, the app's base URL should be availa
 
 
 ##### Important notes
-- Major browsers decided to support HTTP2 only as Secured HTTP2 so far (and will probably keep it like that), therefore this program requires the TLS assets. Additionally, I believe HTTP2 (even through https) should be standard due to it's benefits and rational, so that's why I've chosen to implement this project with it.
+- Major browsers decided to support HTTP2 only as Secured HTTP2 so far (and will probably keep it like that), therefore this program requires the TLS assets. Furthermore, I believe HTTP2 (even through https) should be standard due to it's benefits and rational, so this is way I've chosen to implement this project with it.
