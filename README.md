@@ -47,5 +47,4 @@ If running on `localhost` with default port, the app's base URL should be availa
 
 
 ##### Important notes
-- Major browsers decided to support HTTP2 only as Secured HTTP2 so far (and will probably keep it like that), therefore this program requires the TLS assets. Furthermore, I believe HTTP2 (even through https) should be standard due to it's benefits and rational, so this is way I've chosen to implement this project with it.
-- Ignore the warning about the HTTP2 module, it is emitted from Node.js itself and will probably disappear in the couple next Node.js releases.
+- Major browsers decided to support HTTP2 only as Secured HTTP2 so far (and will probably keep it like that), therefore this program requires the TLS assets. Additionally, I believe HTTP2 (even through https) should be standard due to it's benefits and rational, so that's why I've chosen to implement this project with it.
