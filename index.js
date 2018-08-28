@@ -74,7 +74,7 @@ const
 					koaCompress(),
 					koaBodyparser({enableTypes: ['json']}),
 
-					async (ctx, next) => {
+					async (ctx, next) => { // Error handler middleware - will format API errors appropriately for the client and mask any other sensitive unexpected errors as an "unknown" error with status code of 500
 						try {
 							await next();
 						}
