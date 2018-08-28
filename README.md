@@ -27,7 +27,6 @@ Rapid-S3 is configured based on the following environment variables:
 - `RS3_PORT` - port to listen on - **optional, defaults to `4443`**
 - `RS3_STORAGE_DIR` - path to store the uploaded files in - **optional, defaults to `./storage` (directory is automatically created if not exists)**
 - `RS3_LOG_API_ERRORS` - true/false, whether to log to console API errors and their stacktraces - **optional, defaults to false**
-RS3_STORAGE_DIR
 
 To do this easily, the project supports a `.env` file being at the projects' root.
 Example of a minimal `.env`  file:
